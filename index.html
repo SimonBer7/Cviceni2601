@@ -3,36 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Kresleni</title>
-
-    <link rel="icon" type="image/x-icon" href="fav.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
+    <section class="container">
+        <div id="menu">
 
-<section class="container">
-    <div id="menu">
-        <h1>Kresleni</h1>
-        <label for="stroke">Barva</label>
-        <input id="stroke" name="stroke" type="color">
+            <h1>Kreslení</h1>
+            <label for="stroke">Barva</label>
+            <input id="stroke" name="stroke" type="color">
+            <label for="lineWidth">Tloušťka</label>
+            <input id="lineWidth" name="lineWidth" type="number" value="5">
 
-        <label for="lineWidth">Tloustka</label>
-        <input id="lineWidth" name="lineWidth" type="number" value="5">
+            <button id="clear">Clear</button>
+            <button id="save">Save</button>
+            <button id="load">Load</button>
+            <button id="reset">Reset</button>
+        </div>
 
-        <button id="clear">Clear</button>
+        <div class="plocha">
+            <canvas id="plocha"></canvas>
+        </div>
 
-    </div>
+    </section>
 
-    <div class="plocha">
-        <canvas id="plocha"></canvas>
-
-    </div>
-
-</section>
-
-
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
